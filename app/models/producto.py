@@ -1,8 +1,10 @@
+"""docstring"""
 # app/models/producto.py
 from sqlalchemy import Column, Integer, String, Float, Text
-from .database import Base
+from database import Base
 
 class ProductoDB(Base):
+    """docstring"""
     __tablename__ = "productos"
     id_producto = Column(Integer, primary_key=True, index=True, autoincrement=True)
     name = Column(String, index=True)
